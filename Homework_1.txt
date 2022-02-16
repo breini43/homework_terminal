@@ -1,0 +1,49 @@
+1) Посмотреть где я -pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
+4) Создать 3 папки - mkdir a b c (в каталоге в котором вы находитесь будут созданы 3 папки с именами "а", "b", "c")
+5) Зайти в любоую папку cd /foldername/
+6) Создать 5 файлов (3 txt, 2 json) - touch filename{1..3}.txt filename{1..2}.json будут созданы 3 файла с расширением тхт и 2 файла json
+7) Создать 3 папки - mkdir foldername1 foldername2 foldername3 
+8. Вывести список содержимого папки -  ls или ls -la
+9) + Открыть любой txt файл - vi filename.txt
+10) + написать туда что-нибудь, любой текст.
+11) + сохранить и выйти. - :wq
+12) Выйти из папки на уровень выше - cd..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. - mv filename.txt filename2.txt /foldername/
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp filename.txt filename2.txt /foldername/
+15) Найти файл по имени - find /foldername/filename.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. - команда tail -f -s 5 testfile.txt
+(команда отслеживает изменения в файле каждые 5 секунд и выводит их содержимое в терминал)
+17) вывести несколько первых строк из текстового файла - head -n 2 /foldername/filename.txt
+18) вывести несколько последних строк из текстового файла - tail -n 2 /foldername/filename.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. (открывает файл в терминале)
+20) вывести дату и время - date
+
+Задание со *
+   №1
+	$ curl http://162.55.220.72:5005/terminal-hw-request         
+	% Total    % Received % Xferd  Average Speed   Time    
+	Time     Time  Current                      
+	load  Upload   Total   Spent    Left  Speed
+ 	0     0    0     0    0     0      0      0
+	--:--:-- --:-100   237  100   237    0    0
+ 	859   0    --:--:-- --:--:-- --:--:--    861
+	{"Intro":"Hello!! This is your the first response from server","Tasks":
+	{"Task_1":"Send the next URL in terminal:
+	http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+	"result":["Your_String","Your_number"]}}
+
+   №2
+	echo "Hello, it is my first script"
+	echo "It is my homework in terminal linux"
+
+	cd /d/Homework/
+	mkdir fold{1..3}
+	cd /d/Homework/fold1/
+	touch filename{1..3}.txt filename{1..2}.json
+	mkdir fold{1..3}
+	ls
+	mv /d/Homework/fold1/filename1.txt /d/Homework/fold1/fold1/filename.txt
+	mv /d/Homework/fold1/filename1.json /d/Homework/fold1/fold1/filename.json
